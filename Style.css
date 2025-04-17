@@ -1,0 +1,169 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: "Overpass", sans-serif;
+}
+
+
+/* container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+h3 {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+button {
+    margin: 0px;
+}
+
+
+.card-container  {
+    background-color: rgba(29, 36, 46, 1);
+    width: 410px;
+    height: 410px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.card-content {
+    margin-top: 30px;
+    width: 350px;
+}
+
+.rating-star {
+    background-color:rgba(39, 46, 56, 1);
+    border-radius: 30px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* rating-text-content */
+
+.card-text-content {
+    padding-top: 30px;
+}
+
+.card-title {
+    color: hsl(0, 100%, 100%);
+}
+
+.card-paragraph {
+    font-family: "Overpass", sans-serif;
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+/* Buttons */
+.rating-evaluations {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-evaluations button {
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color:rgba(39, 46, 56, 1);
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.rating-evaluations button:hover {
+    background-color:hsl(0, 100%, 100%);
+    transition: 0.3s;
+}
+
+.rating-evaluations button.active {
+    background-color: hsl(25, 97%, 53%);  /* Яскравий колір, коли кнопка активна */
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+.rating-button {
+    margin-top: 30px;
+}
+
+.rating-button button{
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 100%;
+    height: 44px;
+    text-transform: uppercase;
+    color: hsl(216, 12%, 8%);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.rating-button button:hover {
+    background-color:hsl(0, 100%, 100%);
+    transition: 0.4s;
+}
+
+/* -thank-you- */
+
+.thank-you-container {
+    display: none;
+}
+
+.thank-you-img {
+    display: flex;
+    justify-content: center;
+}
+
+.thank-you-evaluations {
+    
+    margin-top: 30px;
+    background-color:rgba(39, 46, 56, 1);
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.thank-you-evaluations span {
+    color: hsl(25, 97%, 53%);  
+}
+
+.thank-you-title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.thank-you-paragraph p{
+    display: flex;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .rating-container {
+      width: 350px;
+    }
+
+    .card-content {
+        width: 290px;
+    }
+}
